@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="19529" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="OWj-lf-Spg">
+    <device id="watch44"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="19514"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+    </dependencies>
+    <scenes>
+        <!--main_interface-->
+        <scene sceneID="NSs-V6-WdN">
+            <objects>
+                <controller identifier="main_interface" id="OWj-lf-Spg" customClass="InterfaceController" customModule="RoboSuitcase_WatchKit_Extension">
+                    <items>
+                        <group width="1" height="0.96999999999999997" alignment="center" spacing="0.0" id="eq4-Lp-nHF">
+                            <items>
+                                <group width="0.96999999999999997" height="1" alignment="left" spacing="0.0" id="8QK-RR-Iff">
+                                    <items>
+                                        <group width="1" height="1" alignment="left" layout="vertical" spacing="15" id="9I3-qf-T7X">
+                                            <items>
+                                                <button width="1" height="0.5" alignment="left" title="Reset Tilt" id="hBf-yh-Wpu">
+                                                    <color key="backgroundColor" name="AccentColor"/>
+                                                    <fontDescription key="font" type="system" pointSize="20"/>
+                                                    <connections>
+                                                        <action selector="reset_tilt" destination="OWj-lf-Spg" id="8yj-WU-wC6"/>
+                                                    </connections>
+                                                </button>
+                                                <button width="1" height="0.5" alignment="left" title="Start" id="gHe-Wn-vOl">
+                                                    <color key="backgroundColor" red="0.0" green="0.56031829119999998" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <fontDescription key="font" type="system" pointSize="20"/>
+                                                    <connections>
+                                                        <action selector="start_stop_control" destination="OWj-lf-Spg" id="6SM-g3-o9I"/>
+                                                    </connections>
+                                                </button>
+                                            </items>
+                                            <edgeInsets key="margins" left="15" right="15" top="20" bottom="20"/>
+                                        </group>
+                                    </items>
+                                    <edgeInsets key="margins" left="0.0" right="0.0" top="0.0" bottom="0.0"/>
+                                </group>
+                                <group width="0.029999999999999999" height="0.5" alignment="right" spacing="0.0" id="rvT-Ib-RLe">
+                                    <items>
+                                        <group width="0.34000000000000002" height="0.0" alignment="left" verticalAlignment="bottom" spacing="0.0" id="BkJ-AH-B8r">
+                                            <color key="backgroundColor" red="0.99019607843137258" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        </group>
+                                        <group width="0.66000000000000003" height="0.0" alignment="left" verticalAlignment="bottom" spacing="0.0" id="fP2-gB-Ywp">
+                                            <color key="backgroundColor" red="1" green="0.1857388616" blue="0.57339501380000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </group>
+                                    </items>
+                                </group>
+                            </items>
+                        </group>
+                        <group width="1" height="0.029999999999999999" alignment="left" spacing="0.0" id="QLw-CU-ozH">
+                            <items>
+                                <group width="0.5" alignment="left" spacing="0.0" id="DvP-Sg-Iqi">
+                                    <items>
+                                        <group width="0.0" height="1" alignment="right" spacing="0.0" id="Ocy-NA-jMl">
+                                            <color key="backgroundColor" red="0.55634254220000001" green="0.97934550050000002" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </group>
+                                    </items>
+                                </group>
+                                <group width="0.5" alignment="right" spacing="0.0" id="0SK-CE-Qtv">
+                                    <items>
+                                        <group width="0.0" height="1" alignment="left" spacing="0.0" id="WLf-99-eET">
+                                            <color key="backgroundColor" red="0.55634254220000001" green="0.97934550050000002" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </group>
+                                    </items>
+                                </group>
+                            </items>
+                        </group>
+                    </items>
+                    <connections>
+                        <outlet property="angle_slider_left" destination="Ocy-NA-jMl" id="4ag-e0-dkX"/>
+                        <outlet property="angle_slider_right" destination="WLf-99-eET" id="v1h-Ug-bPe"/>
+                        <outlet property="current_motor_power_slider" destination="BkJ-AH-B8r" id="1nR-4J-HMm"/>
+                        <outlet property="start_stop_btn" destination="gHe-Wn-vOl" id="fN5-Zg-pxE"/>
+                        <outlet property="target_motor_power_slider" destination="fP2-gB-Ywp" id="2fm-g4-QI4"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="112.34782608695652" y="26.5625"/>
+        </scene>
+    </scenes>
+    <resources>
+        <namedColor name="AccentColor">
+            <color red="0.0" green="0.32899999618530273" blue="0.57499998807907104" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>
